@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West-Coast Venting HVAC | Salem, OR HVAC Repair & Installation Services</title>
+    <meta name="description" content="West-Coast Venting HVAC - Professional HVAC installation, repair, and maintenance services in Salem, Oregon. Expert technicians for all your heating and cooling needs. Call (503) 330-1740">
+    <meta name="keywords" content="HVAC Salem OR, HVAC repair Salem, HVAC technician Salem Oregon, heating and cooling Salem, furnace repair Salem, air conditioning Salem, duct cleaning Salem">
+    <meta name="author" content="Ivan Flores, West-Coast Venting HVAC">
+    <meta property="og:title" content="West-Coast Venting HVAC | Salem's Trusted HVAC Experts">
+    <meta property="og:description" content="Professional HVAC services in Salem, OR. Installation, repair, maintenance, and more. Licensed & insured. CCB# 244872">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #e7f5ff; /* Light blue background */
+            color: #212529; /* Dark text for readability */
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 16px; /* Smaller space between logo image and text */
+            margin-left: -50px; /* Shift logo to the left */
+        }
+        
+        .logo-image {
+            height: 76px; /* Increased by 40% */
+            width: auto; /* Maintain aspect ratio */
+            vertical-align: middle; /* Align image with text */
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: #212529; /* Dark text for readability */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #007bff; /* Blue for hover state */
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .hero .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #e0e0e0;
+        }
+
+        .hero .hero-subline {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #d0d0d0; /* Slightly dimmer for visual hierarchy */
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6b35;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-button:hover {
+            background-color: #e55a2b;
+            transform: scale(1.05);
+        }
+        
+        .contact-subline {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #555; /* Muted color for hierarchy */
+            text-align: center;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .services h2,
+        .about h2 {
+            color: #ff6b35; /* Accent color for the section titles */
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: #e7f5ff; /* Light blue to match header/footer and make section distinct */
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #ff6b35; /* Accent top border */
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .service-card h3 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .credentials {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .credentials h3 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ff6b35;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: white;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            font-size: 1.2rem;
+        }
+        
+        .contact-item a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #e7f5ff; /* Light blue background */
+            color: #888; /* Existing text color, should be fine */
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .credentials ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1rem; /* Add some space above the list */
+        }
+
+        .credentials ul li {
+            position: relative;
+            padding-left: 1.8em; /* Space for the icon */
+            margin-bottom: 0.75rem; /* Space between items */
+            line-height: 1.4;
+        }
+
+        .credentials ul li::before {
+            content: '\2713'; /* Checkmark character */
+            position: absolute;
+            left: 0;
+            color: #ff6b35; /* Accent color for the checkmark */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/siteLogo.png" alt="West-Coast Venting Logo" class="logo-image">
+                WEST-COAST VENTING
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>West-Coast Venting HVAC</h1>
+        <p class="tagline">Salem's Premier HVAC Installation & Repair Experts</p>
+        <p class="hero-subline">Serving Salem, OR and surrounding areas since 2022</p>
+        <a href="#contact" class="cta-button">Get Your Free Quote</a>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Ventilation Systems</h3>
+                    <p>Professional installation and maintenance of residential and commercial ventilation systems. Improve your indoor air quality with our expert solutions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Coil Cleaning</h3>
+                    <p>Regular coil cleaning improves efficiency and extends the life of your HVAC system. Our thorough cleaning process removes dirt, debris, and buildup.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Preventive Maintenance</h3>
+                    <p>Keep your HVAC system running smoothly year-round with our comprehensive maintenance plans. Prevent costly breakdowns and ensure optimal performance.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Dryer Vent Cleaning</h3>
+                    <p>Protect your home from fire hazards and improve dryer efficiency with our professional dryer vent cleaning services. Safety and efficiency combined.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Duct Repairs & Sealing</h3>
+                    <p>Stop energy waste and improve comfort with our duct repair and sealing services. We fix leaks and optimize your ductwork for maximum efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mechanical Installation</h3>
+                    <p>Expert installation of all HVAC equipment including furnaces, air conditioners, and heat pumps. Quality workmanship guaranteed.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Kitchen Hood Installation</h3>
+                    <p>Commercial and residential kitchen hood installation services. Ensure proper ventilation and compliance with local codes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Duct Insulation</h3>
+                    <p>Reduce energy costs and improve comfort with proper duct insulation. Our team ensures your ductwork is properly insulated for maximum efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Furnace Cleaning</h3>
+                    <p>Keep your furnace running efficiently and safely with our thorough cleaning services. Extend equipment life and improve indoor air quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About West-Coast Venting HVAC</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to West-Coast Venting HVAC, Salem's trusted partner for all heating, ventilation, and air conditioning needs. Founded in 2022 by Ivan Flores, we've quickly established ourselves as the go-to HVAC experts in Salem, Oregon and the surrounding Willamette Valley.</p>
+                
+                <p>Our mission is simple: provide honest, reliable, and professional HVAC services that keep your home or business comfortable year-round. Whether you need emergency repairs, routine maintenance, or a complete system installation, our skilled technicians have the expertise to get the job done right the first time.</p>
+                
+                <p>At West-Coast Venting, we understand that HVAC issues don't always happen during business hours. That's why we offer flexible scheduling and prompt service to ensure your comfort is never compromised. We pride ourselves on transparent pricing, quality workmanship, and exceptional customer service.</p>
+            </div>
+            <div class="credentials">
+                <h3>Why Choose Us?</h3>
+                <ul>
+                    <li>Licensed & Insured (CCB# 244872)</li>
+                    <li>Expert Technicians</li>
+                    <li>Competitive Pricing</li>
+                    <li>24/7 Emergency Service</li>
+                    <li>Satisfaction Guaranteed</li>
+                    <li>Local Salem Business</li>
+                    <li>Free Estimates</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us Today</h2>
+        <p class="contact-subline">Ready to experience the West-Coast Venting difference? Get in touch for your free estimate!</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Phone:</strong> <a href="tel:5033301740">(503) 330-1740</a>
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong> <a href="mailto:WestCoastVenting@gmail.com">WestCoastVenting@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Service Area:</strong> Salem, OR & Surrounding Areas
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 West-Coast Venting HVAC. All rights reserved. | CCB# 244872 | Serving Salem, Oregon</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active class to navigation on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.color = '#212529'; /* Base color for nav links */
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.style.color = '#ff6b35';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
